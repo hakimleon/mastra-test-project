@@ -3,9 +3,12 @@ import Link from 'next/link';
 
 export function NavigationBar() {
   return (
-    <nav className="bg-white shadow-md p-4 flex justify-between items-center fixed w-full z-10">
+    <nav className="bg-black/40 backdrop-blur-md p-4 flex justify-between items-center fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/landing" className="text-3xl font-extrabold text-gray-900 tracking-wider">
+        <Link href="/landing" className="text-3xl font-extrabold text-white tracking-wider flex items-center">
+          <svg className="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 15V8a2 2 0 00-2-2H5a2 2 0 00-2 2v7m18 0l-3 4H6l-3-4m18 0H3m6 4v-4m6 4v-4" />
+          </svg>
           La Compagnie
         </Link>
         <div className="space-x-8 hidden md:flex">
